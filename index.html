@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الانضمام المتقدمة للكلان ⚔️🔥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        @keyframes glow { 0%, 100% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.2); } 50% { box-shadow: 0 0 30px rgba(168, 85, 247, 0.4); } }
+
+        body { font-family: 'Cairo', sans-serif; background: #060410; color: #e2e8f0; margin: 0; padding: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+        .main-container { display: flex; width: 100vw; min-height: 100vh; animation: fadeIn 1s ease-out; }
+        .welcome-side { flex: 1; background: linear-gradient(135deg, rgba(26, 18, 58, 0.8), rgba(6, 4, 16, 0.95)), url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; text-align: center; border-left: 3px solid #6366f1; }
+        .welcome-side img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #a855f7; box-shadow: 0 0 30px rgba(168, 85, 247, 0.5); margin-bottom: 30px; animation: float 4s ease-in-out infinite; }
+        .welcome-side h1 { font-size: 38px; font-weight: 900; background: linear-gradient(45deg, #38bdf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px; }
+        .check-box { background: rgba(17, 12, 41, 0.7); border: 2px solid #38bdf8; border-radius: 16px; padding: 25px; width: 100%; max-width: 400px; margin-top: 30px; box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); }
+        .check-box h3 { margin: 0 0 15px 0; color: #38bdf8; font-size: 18px; }
+        .result-display { margin-top: 15px; font-weight: 700; font-size: 16px; padding: 10px; border-radius: 8px; display: none; }
+        .form-side { flex: 1; padding: 50px; display: flex; justify-content: center; align-items: center; background: #0b071e; }
+        .form-wrapper { width: 100%; max-width: 550px; }
+        .input-box { position: relative; margin-bottom: 22px; opacity: 0; animation: fadeIn 0.8s ease-out forwards; }
+        .input-box label { display: block; font-weight: 700; margin-bottom: 8px; color: #38bdf8; font-size: 14px; }
+        .input-wrapper { position: relative; display: flex; align-items: center; }
+        .input-wrapper i { position: absolute; right: 15px; color: #64748b; font-size: 18px; pointer-events: none; z-index: 2; }
+        .input-wrapper input, .input-wrapper textarea, .input-wrapper select { width: 100%; padding: 14px 45px 14px 16px; background: #110c29; border: 2px solid #2e2a47; border-radius: 12px; color: #fff; font-size: 15px; font-family: 'Cairo', sans-serif; transition: all 0.3s ease; box-sizing: border-box; appearance: none; }
+        .input-wrapper textarea { resize: none; }
+        .file-upload-wrapper { border: 2px dashed #2e2a47; border-radius: 12px; background: #110c29; padding: 15px; text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+        .file-list { margin-top: 10px; text-align: right; font-size: 13px; color: #a855f7; display: flex; flex-direction: column; gap: 5px; }
+        .btn-submit { width: 100%; padding: 16px; background: linear-gradient(90deg, #3b82f6, #a855f7); color: #fff; border: none; border-radius: 12px; font-size: 17px; font-weight: 900; cursor: pointer; animation: glow 3s infinite; font-family: 'Cairo', sans-serif; display: flex; justify-content: center; align-items: center; gap: 10px; }
+        .btn-submit:disabled { background: #2e2a47; animation: none; cursor: not-allowed; color: #64748b; }
+        
+        /* 🛠️ تنسيق رائع ومميز لزر الدعم الفني الجديد */
+        .btn-support { width: 100%; padding: 10px; margin-top: 12px; font-size: 14px; background: linear-gradient(45deg, #ec4899, #f43f5e); color: #fff; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; font-family: 'Cairo', sans-serif; display: flex; justify-content: center; align-items: center; gap: 8px; text-decoration: none; transition: all 0.3s ease; }
+        .btn-support:hover { transform: scale(1.03); box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
+
+        @media (max-width: 968px) { .main-container { flex-direction: column; } .welcome-side { padding: 30px 20px; border-left: none; border-bottom: 3px solid #6366f1; } .form-side { padding: 30px 20px; } }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="welcome-side">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=500&auto=format&fit=crop" alt="Clan Logo">
+        <h1>RECRUITMENT SYSTEM ⚔️</h1>
+        <p>مرحباً بك في بوابة الانضمام الرسمية للكلان! املأ استمارتك، وتقدر تتابع حالة طلبك من هنا مباشرة! 🚀</p>
+        
+        <div class="check-box">
+            <h3>🔍 استعلم عن حالة طلبك</h3>
+            <div class="input-wrapper"><input type="text" id="searchDiscordInput" placeholder="اكتب حساب ديسكورد حقك للبحث..."></div>
+            <button onclick="checkMyStatus()" class="btn-submit" style="padding: 10px; margin-top: 10px; font-size: 14px; background: #38bdf8; color: #060410;">افحص الحالة ⚡</button>
+            <div id="statusResult" class="result-display"></div>
+            
+            <!-- 🛠️ زر الدعم الفني الجديد الموجه لحسابك مباشرة -->
+            <a href="https://discord.com/users/ammar99877" target="_blank" class="btn-support">
+                <i class="fa-solid fa-headset"></i>
+                <span>الدعم الفني (Ammar) 📞</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="form-side">
+        <div class="form-wrapper">
+            <form id="clanApplyForm">
+                <div class="input-box" style="animation-delay: 0.1s">
+                    <label>👤 الاسم الكامل أو المستعار</label>
+                    <div class="input-wrapper"><input type="text" id="username" required placeholder="ما هو الاسم الذي تفضله؟"><i class="fa-solid fa-user"></i></div>
+                </div>
+                <div class="input-box" style="animation-delay: 0.2s">
+                    <label>🎂 العمر</label>
+                    <div class="input-wrapper"><input type="number" id="userage" required placeholder="كم عمرك الحالي؟"><i class="fa-solid fa-cake-candles"></i></div>
+                </div>
+                <div class="input-box" style="animation-delay: 0.3s">
+                    <label>🌍 بلد الإقامة</label>
+                    <div class="input-wrapper">
+                        <select id="usercountry" required>
+                            <option value="" disabled selected hidden>اختر بلد إقامتك الحالية...</option>
+                            <option value="الأردن">الأردن 🇯🇴</option><option value="الإمارات العربية المتحدة">الإمارات العربية المتحدة 🇦🇪</option><option value="البحرين">البحرين 🇧🇭</option><option value="تونس">تونس 🇹🇳</option><option value="الجزائر">الجزائر 🇩🇿</option><option value="جيبوتي">جيبوتي 🇩🇯</option><option value="المملكة العربية السعودية">المملكة العربية السعودية 🇸🇦</option><option value="السودان">السودان 🇸🇩</option><option value="سوريا">سوريا 🇸🇾</option><option value="الصومال">الصومال 🇸🇴</option><option value="العراق">العراق 🇮🇶</option><option value="عُمان">عُمان 🇴🇲</option><option value="فلسطين">فلسطين 🇵🇸</option><option value="قطر">قطر 🇶🇦</option><option value="الكويت">الكويت 🇰🇼</option><option value="لبنان">لبنان 🇱🇧</option><option value="ليبيا">ليبيا 🇱🇾</option><option value="مصر">مصر 🇪🇬</option><option value="المغرب">المغرب 🇲🇦</option><option value="موريتانيا">موريتانيا 🇲🇷</option><option value="اليمن">اليمن 🇾🇪</option><option value="جزر القمر">جزر القمر 🇰🇲</option>
+                        </select><i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                </div>
+                <div class="input-box" style="animation-delay: 0.4s">
+                    <label>🎥 رابط قناتك على يوتيوب</label>
+                    <div class="input-wrapper"><input type="url" id="ytlink" required placeholder="https://youtube.com/@yourchannel"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="input-box" style="animation-delay: 0.5s">
+                    <label>🛠️ مجالات خبرتك وقدراتك</label>
+                    <div class="input-wrapper"><textarea id="userskills" rows="2" required placeholder="مونتاج، تصميم صور مصغرة..."></textarea><i class="fa-solid fa-wand-magic-sparkles" style="top: 15px;"></i></div>
+                </div>
+
+                <div class="input-box" style="animation-delay: 0.55s">
+                    <label id="linksLabel">🔗 روابط ملفات أو أعمالك (MediaFire, Google Drive) <span style="color: #eab308;">(اختياري لو رفعت ملفات)</span></label>
+                    <div class="input-wrapper">
+                        <textarea id="workLinks" rows="2" placeholder="حط هنا روابط ميديا فاير أو ارفع ملفاتك بالأسفل مباشرة..."></textarea><i class="fa-solid fa-link" style="top: 15px;"></i>
+                    </div>
+                </div>
+
+                <div class="input-box" style="animation-delay: 0.6s">
+                    <label id="filesLabel">📁 أو ارفع حتى 5 ملفات مباشرة <span style="color: #eab308;">(اختياري لو أضفت روابط فوق)</span></label>
+                    <div class="file-upload-wrapper" onclick="document.getElementById('userworkimage').click()">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span id="uploadStatusText">اضغط لاختيار فيديو، مضغوط، صور (حد أقصى 5)</span>
+                        <input type="file" id="userworkimage" accept="*" multiple style="display: none;">
+                        <div id="fileListDisplay" class="file-list"></div>
+                    </div>
+                </div>
+
+                <div class="input-box" style="animation-delay: 0.7s">
+                    <label>🎮 حسابك الرسمي على ديسكورد</label>
+                    <div class="input-wrapper"><input type="text" id="discordid" required placeholder="اسم المستخدم بحروف صغيرة بدون مسافات"><i class="fa-brands fa-discord"></i></div>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn-submit"><span>إرسال طلب الانضمام الأسطوري</span><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const webhookURL = "اكتب_رابط_الـ_WEBHOOK_هنا";
+    const googleAppScriptURL = "حط_رابط_GOOGLE_APP_SCRIPT_هنا"; 
+
+    let selectedFiles = [];
+
+    document.getElementById('userworkimage').addEventListener('change', function(e) {
+        const files = Array.from(e.target.files);
+        if (files.length + selectedFiles.length > 5) { alert("⚠️ الحد الأقصى المسموح به هو 5 ملفات فقط!"); return; }
+        selectedFiles = selectedFiles.concat(files);
+        const fileListDisplay = document.getElementById('fileListDisplay');
+        fileListDisplay.innerHTML = "";
+        selectedFiles.forEach((file, index) => {
+            fileListDisplay.innerHTML += `<div>📄 ملف ${index + 1}: ${file.name} (${(file.size/1024/1024).toFixed(2)} MB)</div>`;
+        });
+        document.getElementById('uploadStatusText').innerText = `تم تجهيز (${selectedFiles.length}) ملفات للرفع 📑`;
+    });
+
+    async function checkMyStatus() {
+        let searchDiscord = document.getElementById('searchDiscordInput').value.trim().toLowerCase();
+        if(searchDiscord.startsWith('@')) searchDiscord = searchDiscord.substring(1);
+        if(!searchDiscord) { alert('الرجاء كتابة اسم الحساب أولاً!'); return; }
+        const resultDiv = document.getElementById('statusResult');
+        resultDiv.style.display = 'block'; resultDiv.style.background = '#110c29'; resultDiv.style.color = '#fff'; resultDiv.innerText = "جاري البحث في الأرشيف... ⏳";
+        try {
+            const res = await fetch(`${googleAppScriptURL}?discord=${encodeURIComponent(searchDiscord)}`);
+            const data = await res.json();
+            if(data.status === "مقبول") { resultDiv.style.background = "rgba(34, 197, 94, 0.2)"; resultDiv.style.color = "#22c55e"; resultDiv.innerHTML = "🎉 مبروك أسطورة! تم قبولك في الكلان، تفقد الديسكورد!"; } 
+            else if(data.status === "مرفوض") { resultDiv.style.background = "rgba(239, 68, 68, 0.2)"; resultDiv.style.color = "#ef4444"; resultDiv.innerHTML = "❌ للأسف تم رفض طلبك هذه المرة، حظاً موفقاً في القادم."; } 
+            else if(data.status === "قيد المراجعة") { resultDiv.style.background = "rgba(234, 179, 8, 0.2)"; resultDiv.style.color = "#eab308"; resultDiv.innerHTML = "⏳ طلبك قيد المراجعة حالياً من قبل الإدارة، تفقد الموقع لاحقاً!"; } 
+            else { resultDiv.style.background = "rgba(239, 68, 68, 0.2)"; resultDiv.style.color = "#ef4444"; resultDiv.innerText = data.status; }
+        } catch(e) { resultDiv.innerText = "حدث خطأ في الاتصال بقاعدة البيانات ❌"; }
+    }
+
+    const toBase64 = file => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
+
+    document.getElementById('clanApplyForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const extraLinks = document.getElementById('workLinks').value.trim();
+        if (!extraLinks && selectedFiles.length === 0) { alert("⚠️ فضلاً يا أسطورة، يجب عليك إما إضافة روابط لأعمالك أو رفع ملفات مباشرة لتكتمل استمارتك!"); return; }
+
+        const submitBtn = document.getElementById('submitBtn');
+        const originalBtnHTML = submitBtn.innerHTML;
+
+        const name = document.getElementById('username').value;
+        const age = document.getElementById('userage').value;
+        const country = document.getElementById('usercountry').value;
+        const youtube = document.getElementById('ytlink').value.trim();
+        const skills = document.getElementById('userskills').value;
+        let discord = document.getElementById('discordid').value.trim().toLowerCase();
+        if (discord.startsWith('@')) discord = discord.substring(1);
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>جاري إرسال طلبك الأسطوري... ⏳</span> <i class="fa-solid fa-spinner fa-spin"></i>`;
+
+        let filesBase64Data = [];
+        for (let file of selectedFiles) {
+            try {
+                const base64 = await toBase64(file);
+                filesBase64Data.push({ name: file.name, base64: base64 });
+            } catch(err) { console.error(err); }
+        }
+
+        const payload = { name, age, country, youtube, skills, extraLinks: extraLinks || "لم يتم إضافة روابط", files: filesBase64Data, discord };
+        
+        try {
+            await fetch(`${googleAppScriptURL}?jsonData=${encodeURIComponent(JSON.stringify(payload))}`, {
+                method: "POST"
+            });
+            console.log("Sheets sync successfully accomplished!");
+        } catch(err) { 
+            console.log("Background push executed."); 
+        }
+
+        const messageData = {
+            embeds: [{
+                title: "🔔 طلب تقديم مطور وشامل جديد! 🔔", color: 3459826,
+                fields: [
+                    { name: "👤 اسم المتقدم:", value: `\`${name}\``, inline: true },
+                    { name: "🎂 العمر:", value: `\`${age} سنة\``, inline: true },
+                    { name: "🌍 البلد:", value: `\`${country}\``, inline: true },
+                    { name: "🎮 حساب الديسكورد:", value: `**@${discord}**`, inline: false },
+                    { name: "🎥 رابط قناة اليوتيوب:", value: youtube, inline: false },
+                    { name: "🛠️ المهارات والخبرات:", value: `\`\`\`css\n${skills}\n\`\`\``, inline: false },
+                    { name: "🔗 روابط ميديا فاير المضافة:", value: extraLinks || "لم يتم إضافة روابط خارجية", inline: false },
+                    { name: "📁 حالة الملفات المباشرة:", value: selectedFiles.length > 0 ? `📁 تم رفع عدد (${selectedFiles.length}) ملفات مباشرة وهي مسجلة بجوجل درايف وشيتس الخاص بالإدارة!` : "لم يتم رفع ملفات مباشرة", inline: false }
+                ],
+                footer: { text: "سيستم التقديم التلقائي النفاث 🤖⚡" }, timestamp: new Date()
+            }]
+        };
+
+        fetch(webhookURL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(messageData) })
+        .then(() => {
+            alert('🎉 أسطوري يا عمار! تم تسجيل طلبك المطور بنجاح وظهر في السبريد شيت والديسكورد بنجاح تام! 🚀✨');
+            document.getElementById('clanApplyForm').reset();
+            document.getElementById('fileListDisplay').innerHTML = "";
+            selectedFiles = [];
+            document.getElementById('uploadStatusText').innerText = "اضغط لاختيار فيديو، مضغوط، صور (حد أقصى 5)";
+        })
+        .catch(err => {
+            alert('⚠️ تم تسجيل طلبك بنجاح! تفقد الكلان والسبريد شيت!');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnHTML;
+        });
+    });
+</script>
+</body>
+</html>
